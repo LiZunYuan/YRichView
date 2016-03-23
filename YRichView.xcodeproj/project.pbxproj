@@ -18,6 +18,7 @@
 		CD9A9D761CA2E973002C2363 /* YRichDefaultLoadingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9A9D701CA2E973002C2363 /* YRichDefaultLoadingScrollView.m */; };
 		CD9A9D771CA2E973002C2363 /* YRichView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9A9D721CA2E973002C2363 /* YRichView.m */; };
 		CD9A9D781CA2E973002C2363 /* YRichViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9A9D741CA2E973002C2363 /* YRichViewController.m */; };
+		CD9A9D7B1CA2ED0D002C2363 /* OneDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9A9D7A1CA2ED0D002C2363 /* OneDemoController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		CD9A9D721CA2E973002C2363 /* YRichView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRichView.m; sourceTree = "<group>"; };
 		CD9A9D731CA2E973002C2363 /* YRichViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRichViewController.h; sourceTree = "<group>"; };
 		CD9A9D741CA2E973002C2363 /* YRichViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRichViewController.m; sourceTree = "<group>"; };
+		CD9A9D791CA2ED0D002C2363 /* OneDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneDemoController.h; sourceTree = "<group>"; };
+		CD9A9D7A1CA2ED0D002C2363 /* OneDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneDemoController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				CD9A9D3F1CA2E963002C2363 /* ViewController.h */,
 				CD9A9D401CA2E963002C2363 /* ViewController.m */,
 				CD9A9D421CA2E963002C2363 /* Main.storyboard */,
+				CD9A9D791CA2ED0D002C2363 /* OneDemoController.h */,
+				CD9A9D7A1CA2ED0D002C2363 /* OneDemoController.m */,
 				CD9A9D451CA2E963002C2363 /* Assets.xcassets */,
 				CD9A9D471CA2E963002C2363 /* LaunchScreen.storyboard */,
 				CD9A9D4A1CA2E963002C2363 /* Info.plist */,
@@ -294,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD9A9D411CA2E963002C2363 /* ViewController.m in Sources */,
+				CD9A9D7B1CA2ED0D002C2363 /* OneDemoController.m in Sources */,
 				CD9A9D3E1CA2E963002C2363 /* AppDelegate.m in Sources */,
 				CD9A9D781CA2E973002C2363 /* YRichViewController.m in Sources */,
 				CD9A9D771CA2E973002C2363 /* YRichView.m in Sources */,
@@ -440,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YRichView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.code.YRichView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -451,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YRichView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.code.YRichView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -524,6 +532,7 @@
 				CD9A9D651CA2E963002C2363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD9A9D661CA2E963002C2363 /* Build configuration list for PBXNativeTarget "YRichViewTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +541,7 @@
 				CD9A9D681CA2E963002C2363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD9A9D691CA2E963002C2363 /* Build configuration list for PBXNativeTarget "YRichViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +550,7 @@
 				CD9A9D6B1CA2E963002C2363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

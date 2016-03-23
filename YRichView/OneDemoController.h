@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  OneDemoController.h
 //  YRichView
 //
 //  Created by code on 16/3/23.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-
+@interface OneDemoController : UIViewController
 
 @end
-

@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  OneDemoController.m
 //  YRichView
 //
 //  Created by code on 16/3/23.
 //  Copyright © 2016年 code. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "OneDemoController.h"
 
-@interface ViewController : UITableViewController
-
+@implementation OneDemoController
 
 @end
-
