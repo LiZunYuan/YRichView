@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD9A9D3B1CA2E963002C2363 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9A9D3A1CA2E963002C2363 /* main.m */; };
+		CD9A9D3E1CA2E963002C2363 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9A9D3D1CA2E963002C2363 /* AppDelegate.m */; };
+		CD9A9D411CA2E963002C2363 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9A9D401CA2E963002C2363 /* ViewController.m */; };
+		CD9A9D441CA2E963002C2363 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9A9D421CA2E963002C2363 /* Main.storyboard */; };
+		CD9A9D461CA2E963002C2363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9A9D451CA2E963002C2363 /* Assets.xcassets */; };
+		CD9A9D491CA2E963002C2363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9A9D471CA2E963002C2363 /* LaunchScreen.storyboard */; };
+		CD9A9D541CA2E963002C2363 /* YRichViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9A9D531CA2E963002C2363 /* YRichViewTests.m */; };
+		CD9A9D5F1CA2E963002C2363 /* YRichViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9A9D5E1CA2E963002C2363 /* YRichViewUITests.m */; };
+		CD9A9D761CA2E973002C2363 /* YRichDefaultLoadingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9A9D701CA2E973002C2363 /* YRichDefaultLoadingScrollView.m */; };
+		CD9A9D771CA2E973002C2363 /* YRichView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9A9D721CA2E973002C2363 /* YRichView.m */; };
+		CD9A9D781CA2E973002C2363 /* YRichViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9A9D741CA2E973002C2363 /* YRichViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD9A9D501CA2E963002C2363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD9A9D2E1CA2E963002C2363 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD9A9D351CA2E963002C2363;
+			remoteInfo = YRichView;
+		};
+		CD9A9D5B1CA2E963002C2363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD9A9D2E1CA2E963002C2363 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD9A9D351CA2E963002C2363;
+			remoteInfo = YRichView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD9A9D361CA2E963002C2363 /* YRichView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YRichView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9A9D3A1CA2E963002C2363 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD9A9D3C1CA2E963002C2363 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD9A9D3D1CA2E963002C2363 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD9A9D3F1CA2E963002C2363 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD9A9D401CA2E963002C2363 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD9A9D431CA2E963002C2363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD9A9D451CA2E963002C2363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD9A9D481CA2E963002C2363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD9A9D4A1CA2E963002C2363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD9A9D4F1CA2E963002C2363 /* YRichViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YRichViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9A9D531CA2E963002C2363 /* YRichViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YRichViewTests.m; sourceTree = "<group>"; };
+		CD9A9D551CA2E963002C2363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD9A9D5A1CA2E963002C2363 /* YRichViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YRichViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9A9D5E1CA2E963002C2363 /* YRichViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YRichViewUITests.m; sourceTree = "<group>"; };
+		CD9A9D601CA2E963002C2363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD9A9D6F1CA2E973002C2363 /* YRichDefaultLoadingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRichDefaultLoadingScrollView.h; sourceTree = "<group>"; };
+		CD9A9D701CA2E973002C2363 /* YRichDefaultLoadingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRichDefaultLoadingScrollView.m; sourceTree = "<group>"; };
+		CD9A9D711CA2E973002C2363 /* YRichView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRichView.h; sourceTree = "<group>"; };
+		CD9A9D721CA2E973002C2363 /* YRichView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRichView.m; sourceTree = "<group>"; };
+		CD9A9D731CA2E973002C2363 /* YRichViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRichViewController.h; sourceTree = "<group>"; };
+		CD9A9D741CA2E973002C2363 /* YRichViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRichViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD9A9D331CA2E963002C2363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD9A9D4C1CA2E963002C2363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD9A9D571CA2E963002C2363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD9A9D2D1CA2E963002C2363 = {
+			isa = PBXGroup;
+			children = (
+				CD9A9D381CA2E963002C2363 /* YRichView */,
+				CD9A9D521CA2E963002C2363 /* YRichViewTests */,
+				CD9A9D5D1CA2E963002C2363 /* YRichViewUITests */,
+				CD9A9D371CA2E963002C2363 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD9A9D371CA2E963002C2363 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD9A9D361CA2E963002C2363 /* YRichView.app */,
+				CD9A9D4F1CA2E963002C2363 /* YRichViewTests.xctest */,
+				CD9A9D5A1CA2E963002C2363 /* YRichViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD9A9D381CA2E963002C2363 /* YRichView */ = {
+			isa = PBXGroup;
+			children = (
+				CD9A9D6C1CA2E973002C2363 /* HBRichView */,
+				CD9A9D3C1CA2E963002C2363 /* AppDelegate.h */,
+				CD9A9D3D1CA2E963002C2363 /* AppDelegate.m */,
+				CD9A9D3F1CA2E963002C2363 /* ViewController.h */,
+				CD9A9D401CA2E963002C2363 /* ViewController.m */,
+				CD9A9D421CA2E963002C2363 /* Main.storyboard */,
+				CD9A9D451CA2E963002C2363 /* Assets.xcassets */,
+				CD9A9D471CA2E963002C2363 /* LaunchScreen.storyboard */,
+				CD9A9D4A1CA2E963002C2363 /* Info.plist */,
+				CD9A9D391CA2E963002C2363 /* Supporting Files */,
+			);
+			path = YRichView;
+			sourceTree = "<group>";
+		};
+		CD9A9D391CA2E963002C2363 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD9A9D3A1CA2E963002C2363 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD9A9D521CA2E963002C2363 /* YRichViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD9A9D531CA2E963002C2363 /* YRichViewTests.m */,
+				CD9A9D551CA2E963002C2363 /* Info.plist */,
+			);
+			path = YRichViewTests;
+			sourceTree = "<group>";
+		};
+		CD9A9D5D1CA2E963002C2363 /* YRichViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD9A9D5E1CA2E963002C2363 /* YRichViewUITests.m */,
+				CD9A9D601CA2E963002C2363 /* Info.plist */,
+			);
+			path = YRichViewUITests;
+			sourceTree = "<group>";
+		};
+		CD9A9D6C1CA2E973002C2363 /* HBRichView */ = {
+			isa = PBXGroup;
+			children = (
+				CD9A9D6F1CA2E973002C2363 /* YRichDefaultLoadingScrollView.h */,
+				CD9A9D701CA2E973002C2363 /* YRichDefaultLoadingScrollView.m */,
+				CD9A9D711CA2E973002C2363 /* YRichView.h */,
+				CD9A9D721CA2E973002C2363 /* YRichView.m */,
+				CD9A9D731CA2E973002C2363 /* YRichViewController.h */,
+				CD9A9D741CA2E973002C2363 /* YRichViewController.m */,
+			);
+			path = HBRichView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD9A9D351CA2E963002C2363 /* YRichView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD9A9D631CA2E963002C2363 /* Build configuration list for PBXNativeTarget "YRichView" */;
+			buildPhases = (
+				CD9A9D321CA2E963002C2363 /* Sources */,
+				CD9A9D331CA2E963002C2363 /* Frameworks */,
+				CD9A9D341CA2E963002C2363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YRichView;
+			productName = YRichView;
+			productReference = CD9A9D361CA2E963002C2363 /* YRichView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD9A9D4E1CA2E963002C2363 /* YRichViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD9A9D661CA2E963002C2363 /* Build configuration list for PBXNativeTarget "YRichViewTests" */;
+			buildPhases = (
+				CD9A9D4B1CA2E963002C2363 /* Sources */,
+				CD9A9D4C1CA2E963002C2363 /* Frameworks */,
+				CD9A9D4D1CA2E963002C2363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD9A9D511CA2E963002C2363 /* PBXTargetDependency */,
+			);
+			name = YRichViewTests;
+			productName = YRichViewTests;
+			productReference = CD9A9D4F1CA2E963002C2363 /* YRichViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD9A9D591CA2E963002C2363 /* YRichViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD9A9D691CA2E963002C2363 /* Build configuration list for PBXNativeTarget "YRichViewUITests" */;
+			buildPhases = (
+				CD9A9D561CA2E963002C2363 /* Sources */,
+				CD9A9D571CA2E963002C2363 /* Frameworks */,
+				CD9A9D581CA2E963002C2363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD9A9D5C1CA2E963002C2363 /* PBXTargetDependency */,
+			);
+			name = YRichViewUITests;
+			productName = YRichViewUITests;
+			productReference = CD9A9D5A1CA2E963002C2363 /* YRichViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD9A9D2E1CA2E963002C2363 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = code;
+				TargetAttributes = {
+					CD9A9D351CA2E963002C2363 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CD9A9D4E1CA2E963002C2363 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CD9A9D351CA2E963002C2363;
+					};
+					CD9A9D591CA2E963002C2363 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CD9A9D351CA2E963002C2363;
+					};
+				};
+			};
+			buildConfigurationList = CD9A9D311CA2E963002C2363 /* Build configuration list for PBXProject "YRichView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD9A9D2D1CA2E963002C2363;
+			productRefGroup = CD9A9D371CA2E963002C2363 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD9A9D351CA2E963002C2363 /* YRichView */,
+				CD9A9D4E1CA2E963002C2363 /* YRichViewTests */,
+				CD9A9D591CA2E963002C2363 /* YRichViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD9A9D341CA2E963002C2363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD9A9D491CA2E963002C2363 /* LaunchScreen.storyboard in Resources */,
+				CD9A9D461CA2E963002C2363 /* Assets.xcassets in Resources */,
+				CD9A9D441CA2E963002C2363 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD9A9D4D1CA2E963002C2363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD9A9D581CA2E963002C2363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD9A9D321CA2E963002C2363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD9A9D411CA2E963002C2363 /* ViewController.m in Sources */,
+				CD9A9D3E1CA2E963002C2363 /* AppDelegate.m in Sources */,
+				CD9A9D781CA2E973002C2363 /* YRichViewController.m in Sources */,
+				CD9A9D771CA2E973002C2363 /* YRichView.m in Sources */,
+				CD9A9D761CA2E973002C2363 /* YRichDefaultLoadingScrollView.m in Sources */,
+				CD9A9D3B1CA2E963002C2363 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD9A9D4B1CA2E963002C2363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD9A9D541CA2E963002C2363 /* YRichViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD9A9D561CA2E963002C2363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD9A9D5F1CA2E963002C2363 /* YRichViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD9A9D511CA2E963002C2363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD9A9D351CA2E963002C2363 /* YRichView */;
+			targetProxy = CD9A9D501CA2E963002C2363 /* PBXContainerItemProxy */;
+		};
+		CD9A9D5C1CA2E963002C2363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD9A9D351CA2E963002C2363 /* YRichView */;
+			targetProxy = CD9A9D5B1CA2E963002C2363 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD9A9D421CA2E963002C2363 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD9A9D431CA2E963002C2363 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD9A9D471CA2E963002C2363 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD9A9D481CA2E963002C2363 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD9A9D611CA2E963002C2363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD9A9D621CA2E963002C2363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD9A9D641CA2E963002C2363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YRichView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.code.YRichView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD9A9D651CA2E963002C2363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YRichView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.code.YRichView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD9A9D671CA2E963002C2363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YRichViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.code.YRichViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YRichView.app/YRichView";
+			};
+			name = Debug;
+		};
+		CD9A9D681CA2E963002C2363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YRichViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.code.YRichViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YRichView.app/YRichView";
+			};
+			name = Release;
+		};
+		CD9A9D6A1CA2E963002C2363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YRichViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.code.YRichViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YRichView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CD9A9D6B1CA2E963002C2363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YRichViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.code.YRichViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YRichView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD9A9D311CA2E963002C2363 /* Build configuration list for PBXProject "YRichView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD9A9D611CA2E963002C2363 /* Debug */,
+				CD9A9D621CA2E963002C2363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD9A9D631CA2E963002C2363 /* Build configuration list for PBXNativeTarget "YRichView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD9A9D641CA2E963002C2363 /* Debug */,
+				CD9A9D651CA2E963002C2363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD9A9D661CA2E963002C2363 /* Build configuration list for PBXNativeTarget "YRichViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD9A9D671CA2E963002C2363 /* Debug */,
+				CD9A9D681CA2E963002C2363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD9A9D691CA2E963002C2363 /* Build configuration list for PBXNativeTarget "YRichViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD9A9D6A1CA2E963002C2363 /* Debug */,
+				CD9A9D6B1CA2E963002C2363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD9A9D2E1CA2E963002C2363 /* Project object */;
+}
