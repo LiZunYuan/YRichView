@@ -34,7 +34,7 @@
         _topView = [[UIView alloc] init];
         _loadIndexSet = [NSMutableSet set];
         
-        _contentScrollView = [[UIScrollView alloc] init];
+        _contentScrollView = [[HBLimitScrollScrollView alloc] init];
         _contentScrollView.delegate = self;
         _contentScrollView.bounces = NO;
         _contentScrollView.showsHorizontalScrollIndicator = NO;
@@ -43,7 +43,7 @@
     return self;
 }
 
--(void)reloadData
+- (void)reloadData
 {
     self.headerViewHeight = [self __headerViewHeight];
     self.middleViewHeight = [self __middleViewHeight];
@@ -68,16 +68,7 @@
     [self addSubview:self.contentScrollView];
     
     [_loadIndexSet removeAllObjects];
-}
-
-- (void)layoutSubviews
-{
-    [super layoutSubviews];
     
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        [self reloadData];
-    });
     
     [self.contentScrollView setFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     [self.topView setFrame:CGRectMake(0, 0, self.frame.size.width, _topView.frame.size.height)];
@@ -95,6 +86,17 @@
     _tableviewArray = scrollViewArray;
     
     [self goIndex:0];
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self reloadData];
+    });
+    
 }
 
 - (UIScrollView *)initializeScrollView:(UIScrollView *)scrollView withIndex:(NSInteger)i
@@ -234,48 +236,36 @@
 
 - (UIView *)__headerView
 {
-    if (_headerView == nil) {
-        if ([self.delegate respondsToSelector:@selector(headerViewInRichView:)]) {
-            _headerView = [self.delegate headerViewInRichView:self];
-        }
+    if ([self.delegate respondsToSelector:@selector(headerViewInRichView:)]) {
+        return [self.delegate headerViewInRichView:self];
     }
-    return _headerView;
+    return nil;
 }
 
 - (CGFloat)__headerViewHeight
 {
-    static CGFloat headerViewHeight = -1;
-    if (headerViewHeight == -1) {
-        if([self.delegate respondsToSelector:@selector(heightForHeaderViewInRichView:)]) {
-            headerViewHeight = [self.delegate heightForHeaderViewInRichView:self];
-        }else{
-            headerViewHeight = 0;
-        }
+    
+    if([self.delegate respondsToSelector:@selector(heightForHeaderViewInRichView:)]) {
+        return [self.delegate heightForHeaderViewInRichView:self];
     }
-    return headerViewHeight;
+    return 0;
 }
 
 - (UIView *)__middleView
 {
-    if (_middleView == nil) {
-        if ([self.delegate respondsToSelector:@selector(middleViewInRichView:)]) {
-            _middleView = [self.delegate middleViewInRichView:self];
-        }
+    if ([self.delegate respondsToSelector:@selector(middleViewInRichView:)]) {
+        return [self.delegate middleViewInRichView:self];
     }
-    return _middleView;
+    return nil;
 }
 
 - (CGFloat)__middleViewHeight
 {
-    static CGFloat middleViewHeight = -1;
-    if (middleViewHeight == -1) {
-        if([self.delegate respondsToSelector:@selector(heightForMiddleViewInRichView:)]) {
-            middleViewHeight = [self.delegate heightForMiddleViewInRichView:self];
-        }else{
-            middleViewHeight = 0;
-        }
+    
+    if([self.delegate respondsToSelector:@selector(heightForMiddleViewInRichView:)]) {
+        return [self.delegate heightForMiddleViewInRichView:self];
     }
-    return middleViewHeight;
+    return 0;
 }
 
 - (UIScrollView *)__loadingScrollViewAtIndex:(NSInteger)index
@@ -286,7 +276,7 @@
     }
     
     if (loadingScrollView == nil) {
-        loadingScrollView = [[YRichDefaultLoadingScrollView alloc] init];
+        loadingScrollView = [[HBRichDefaultLoadingScrollView alloc] init];
     }
     return loadingScrollView;
 }

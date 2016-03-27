@@ -30,6 +30,6 @@
 @property (nonatomic, weak) id<YRichViewDataSource> dataSource;
 @property (nonatomic, weak) id<YRichViewDelegate> delegate;
 - (void)showScrollViewWithIndex:(NSInteger)index;//滚动到第几个
-//- (void)reloadData;//刷新数据 未来实现
+- (void)reloadData;//刷新数据 未来实现
 
 @end
