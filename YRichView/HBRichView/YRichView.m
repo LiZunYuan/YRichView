@@ -8,6 +8,7 @@
 
 #import "YRichView.h"
 #import "YRichDefaultLoadingScrollView.h"
+//#import "YZRichDefalutLoadingScroll"
 
 @interface YRichView()<UIScrollViewDelegate>
 @property (nonatomic, strong) UIScrollView *contentScrollView;
@@ -34,7 +35,7 @@
         _topView = [[UIView alloc] init];
         _loadIndexSet = [NSMutableSet set];
         
-        _contentScrollView = [[HBLimitScrollScrollView alloc] init];
+        _contentScrollView = [[UIScrollView alloc] init];
         _contentScrollView.delegate = self;
         _contentScrollView.bounces = NO;
         _contentScrollView.showsHorizontalScrollIndicator = NO;
@@ -276,7 +277,7 @@
     }
     
     if (loadingScrollView == nil) {
-        loadingScrollView = [[HBRichDefaultLoadingScrollView alloc] init];
+        loadingScrollView = [[YRichDefaultLoadingScrollView alloc] init];
     }
     return loadingScrollView;
 }
